@@ -37,7 +37,68 @@ header{
 .socail{
   float: right;
   list-style-type: none;
+  margin-top: 8%;
 }
 .social li {
   display: inline;
+}
+
+
+.banner{
+  margin-bottom: 3%;
+}
+
+.one_col{
+  padding: 2%;
+}
+h1{
+    letter-spacing: 1%
+}
+/* p tag not working */
+p {
+  text-align: !important justify;
+}
+.button-holder {
+  float: right;
+  margin: 0 2% 4% 0;
+}
+.btn{
+  float: right;
+  background: #303840;
+  color: #f6faff;
+  text-decoration: none;
+  font-weight: 800px;
+  padding: 8px 12px;  /* 8px is top and right 12px buttom left*/
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+.btn:hover{
+  background: #58585A;
+}
+.line{
+  clear: both;            /* creates the invisible horizontal rule, */
+  height: 2px;            /* this gives a background color in order to display*/
+  background-color: #e3e9e9;
+  margin: 4% auto;
+  width: 96%;
+}
+
+.two-col {
+  float: left;
+  width: 46%;
+  padding: 2%;
+}
+/* .a {
+  color: #607cc3;
+  text-decoration: none;
+} */
+.contact {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+@@media (max-width: 600px) {
+  .two-col {
+    width: 97%;
+  }
 }
