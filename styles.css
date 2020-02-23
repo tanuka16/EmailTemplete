@@ -13,12 +13,46 @@ body{
   max-width: 800px;
   margin: 0 auto;         /* center all of the content with a max-width 800px   */
   padding: 2%;
-  color: #565859;
+  /* color: #565859; */
+  color: #f6faff;
 }
 
 #wrapper{
-  background: #f6faff;
+  background: black;
+  /* background: #f6faff; */
 }
+/* style the social icons */
+.fa {
+  padding: 5px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30%;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/* end social icons */
+
 img{
   max-width: 100%;
 }
@@ -27,7 +61,7 @@ header{
 }
 #logo{
   max-width: 220px;
-  margin: 2% 0 0 5%;  /* margin: top right buttom left*/
+  margin: 1% 0 0 4%;  /* margin: top right buttom left*/
   float: left;
 }
 #callout{
@@ -37,7 +71,7 @@ header{
 .socail{
   float: right;
   list-style-type: none;
-  margin-top: 8%;
+  margin-top: 20%;
 }
 .social li {
   display: inline;
@@ -49,21 +83,34 @@ header{
 }
 
 .one_col{
-  padding: 2%;
+  padding: 3%;
 }
 h1{
-    letter-spacing: 1%
+    letter-spacing: 1%;
+    text-align: center;
+    margin-bottom: 3%;
 }
+.col{
+  width: 50%;
+}
+.col-img{
+  margin: 50% 0 0 50%;
+  border-radius: 10% !important;
+  /* height: 80px; */
+  max-width: 80%;
+}
+
 /* p tag not working */
 p {
   text-align: !important justify;
 }
 .button-holder {
-  float: right;
-  margin: 0 2% 4% 0;
+  float: center;
+  margin: 2% 0 4% 40%;
 }
+/* margin: top right buttom left*/
 .btn{
-  float: right;
+  float: center;
   background: #303840;
   color: #f6faff;
   text-decoration: none;
@@ -88,6 +135,20 @@ p {
   width: 46%;
   padding: 2%;
 }
+.two-col:hover .img2{
+  opacity: 0.3;
+}
+.middle{
+  /* transition: .5s ease; */
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  text-align: center;
+}
+.two-col:hover .middle{
+  opacity: 1;
+}
+
 /* .a {
   color: #607cc3;
   text-decoration: none;
@@ -97,7 +158,7 @@ p {
   padding-bottom: 3%;
 }
 
-@@media (max-width: 600px) {
+@media (max-width: 600px) {
   .two-col {
     width: 97%;
   }
