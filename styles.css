@@ -13,12 +13,45 @@ body{
   max-width: 800px;
   margin: 0 auto;         /* center all of the content with a max-width 800px   */
   padding: 2%;
-  color: #565859;
+  /* color: #565859; */
+  color: #f6faff;
 }
 
 #wrapper{
-  background: #f6faff;
+  background: black;
 }
+/* style the social icons */
+.fa {
+  padding: 5px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30%;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/* end social icons */
+
 img{
   max-width: 100%;
 }
@@ -27,20 +60,25 @@ header{
 }
 #logo{
   max-width: 220px;
-  margin: 2% 0 0 5%;  /* margin: top right buttom left*/
+  margin: 1% 0 0 4%;  /* margin: top right buttom left*/
   float: left;
 }
 #callout{
-  float: right;
-  margin: 3% 3% 2% 0
+  display: flex;
+  justify-content: flex-end;
+  /* flex-direction:row; */
 }
-.socail{
-  float: right;
+ul{
   list-style-type: none;
-  margin-top: 8%;
+  margin-top: 4%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .social li {
-  display: inline;
+  /* display: inline; */
+  display: block;
+  padding: .5em;
 }
 
 
@@ -49,21 +87,29 @@ header{
 }
 
 .one_col{
-  padding: 2%;
+  display: flex;
+  padding: 3%;
 }
 h1{
-    letter-spacing: 1%
+    letter-spacing: 1%;
+    display: flex;
+    margin-bottom: 3%;
+    justify-content: center;
 }
-/* p tag not working */
-p {
-  text-align: !important justify;
+.col{
+  width: 50%;
 }
+.col-img{
+  margin: 50% 0 0 50%;
+}
+
 .button-holder {
-  float: right;
-  margin: 0 2% 4% 0;
+  float: center;
+  margin: 2% 0 4% 40%;
 }
+/* margin: top right buttom left*/
 .btn{
-  float: right;
+  float: center;
   background: #303840;
   color: #f6faff;
   text-decoration: none;
@@ -87,17 +133,36 @@ p {
   float: left;
   width: 46%;
   padding: 2%;
+  position: relative;
 }
-/* .a {
-  color: #607cc3;
+.two-col:hover .img2{
+  opacity: 0.5;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.two-col:hover .middle{
+  opacity: 1;
+}
+
+a {
+  color: white;
   text-decoration: none;
-} */
+}
 .contact {
   text-align: center;
   padding-bottom: 3%;
 }
 
-@@media (max-width: 600px) {
+p {
+  text-align: !important justify;
+}
+
+@media (max-width: 600px) {
   .two-col {
     width: 97%;
   }
