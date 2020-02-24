@@ -19,7 +19,6 @@ body{
 
 #wrapper{
   background: black;
-  /* background: #f6faff; */
 }
 /* style the social icons */
 .fa {
@@ -65,16 +64,21 @@ header{
   float: left;
 }
 #callout{
-  float: right;
-  margin: 3% 3% 2% 0
+  display: flex;
+  justify-content: flex-end;
+  /* flex-direction:row; */
 }
-.socail{
-  float: right;
+ul{
   list-style-type: none;
-  margin-top: 20%;
+  margin-top: 4%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .social li {
-  display: inline;
+  /* display: inline; */
+  display: block;
+  padding: .5em;
 }
 
 
@@ -83,27 +87,22 @@ header{
 }
 
 .one_col{
+  display: flex;
   padding: 3%;
 }
 h1{
     letter-spacing: 1%;
-    text-align: center;
+    display: flex;
     margin-bottom: 3%;
+    justify-content: center;
 }
 .col{
   width: 50%;
 }
 .col-img{
   margin: 50% 0 0 50%;
-  border-radius: 10% !important;
-  /* height: 80px; */
-  max-width: 80%;
 }
 
-/* p tag not working */
-p {
-  text-align: !important justify;
-}
 .button-holder {
   float: center;
   margin: 2% 0 4% 40%;
@@ -134,28 +133,33 @@ p {
   float: left;
   width: 46%;
   padding: 2%;
+  position: relative;
 }
 .two-col:hover .img2{
-  opacity: 0.3;
+  opacity: 0.5;
 }
-.middle{
-  /* transition: .5s ease; */
+.centered{
   position: absolute;
-  /* transform: translate(-50%, -50%); */
-  /* -ms-transform: translate(-50%, -50%); */
+  top: 50%;
+  left: 50%;
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 .two-col:hover .middle{
   opacity: 1;
 }
 
-/* .a {
-  color: #607cc3;
+a {
+  color: white;
   text-decoration: none;
-} */
+}
 .contact {
   text-align: center;
   padding-bottom: 3%;
+}
+
+p {
+  text-align: !important justify;
 }
 
 @media (max-width: 600px) {
